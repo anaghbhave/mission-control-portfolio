@@ -36,6 +36,7 @@ import {
   AiLedPanel,
   DocumentLedPanel,
 } from "@/components/dashboard/workflow-panels";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export const Route = createFileRoute("/")({
   component: CommandCenter,
