@@ -12,6 +12,7 @@ import {
   ShieldCheck,
   Sparkles,
 } from "lucide-react";
+import afLogo from "@/assets/af-logo.png";
 import {
   Area,
   AreaChart,
