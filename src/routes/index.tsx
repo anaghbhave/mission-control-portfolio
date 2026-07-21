@@ -42,9 +42,9 @@ export const Route = createFileRoute("/")({
 
 const tabs = [
   { id: "overview", label: "Overview", icon: Command },
-  { id: "document", label: "Document-Led", icon: FileText },
-  { id: "ai", label: "AI-Led", icon: Sparkles },
-  { id: "agent", label: "Agent-Led", icon: GitBranch },
+  { id: "document", label: "MIPRs", icon: FileText },
+  { id: "ai", label: "HR Requests", icon: Sparkles },
+  { id: "agent", label: "Contracts", icon: GitBranch },
   { id: "exceptions", label: "Exceptions", icon: ShieldCheck },
 ] as const;
 
@@ -66,7 +66,7 @@ function CommandCenter() {
             </div>
             <div>
               <p className="font-display text-sm font-semibold leading-tight text-foreground">Mission Automation</p>
-              <p className="text-[11px] leading-tight text-muted-foreground">Command Center · Q3 FY25</p>
+              <p className="text-[11px] leading-tight text-muted-foreground">Command Center · FY26</p>
             </div>
           </div>
           <div className="hidden flex-1 max-w-md md:block">
@@ -107,8 +107,7 @@ function CommandCenter() {
               Automation performance across <span className="text-gradient">every mission workflow</span>
             </h1>
             <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
-              Real-time visibility into document-led intake, AI-led service delivery, and agent-led portfolio actions —
-              tuned for leaders who need cycle time, throughput, and exceptions on one screen.
+              Real-time visibility into document-led intake, AI-led service delivery, and agent-led portfolio actions
             </p>
           </div>
           <div className="flex gap-2">
