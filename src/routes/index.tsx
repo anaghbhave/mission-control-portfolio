@@ -12,6 +12,7 @@ import {
   ShieldCheck,
   Sparkles,
 } from "lucide-react";
+import afLogo from "@/assets/af-logo.png";
 import {
   Area,
   AreaChart,
@@ -61,8 +62,8 @@ function CommandCenter() {
       <header className="sticky top-0 z-20 border-b border-border bg-background/70 backdrop-blur-xl">
         <div className="mx-auto flex max-w-[1600px] items-center justify-between gap-6 px-6 py-3">
           <div className="flex items-center gap-3">
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/15 ring-1 ring-primary/30">
-              <Radar className="h-4 w-4 text-primary" />
+            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 ring-1 ring-primary/40">
+              <img src={afLogo} alt="U.S. Air Force" className="h-8 w-8" width={32} height={32} />
             </div>
             <div>
               <p className="font-display text-sm font-semibold leading-tight text-foreground">Mission Automation</p>
