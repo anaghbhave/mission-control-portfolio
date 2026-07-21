@@ -36,6 +36,7 @@ import {
   AiLedPanel,
   DocumentLedPanel,
 } from "@/components/dashboard/workflow-panels";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export const Route = createFileRoute("/")({
   component: CommandCenter,
@@ -92,8 +93,9 @@ function CommandCenter() {
               <Bell className="h-4 w-4" />
               <span className="absolute right-1.5 top-1.5 h-1.5 w-1.5 rounded-full bg-destructive" />
             </button>
+            <ThemeToggle />
             <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-primary to-info font-display text-xs font-semibold text-primary-foreground">
-              JR
+              AB
             </div>
           </div>
         </div>
