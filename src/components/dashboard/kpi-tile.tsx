@@ -12,8 +12,8 @@ type Props = {
   accent?: string;
 };
 
-export function KpiTile({ label, value, unit, delta, trend, spark, positiveIsGood = true, accent = "var(--chart-1)" }: Props) {
-  const good = positiveIsGood ? trend === "up" : trend === "down";
+export function KpiTile({ label, value, unit, delta, trend, spark, accent = "var(--chart-1)" }: Props) {
+  const isUp = trend === "up";
   const data = spark.map((v, i) => ({ i, v }));
   const gradId = `g-${label.replace(/\s+/g, "")}`;
 
@@ -25,10 +25,10 @@ export function KpiTile({ label, value, unit, delta, trend, spark, positiveIsGoo
           <p className="text-[11px] font-medium uppercase tracking-wider text-muted-foreground">{label}</p>
           <span
             className={`inline-flex items-center gap-0.5 rounded-full px-1.5 py-0.5 text-[10px] font-semibold ${
-              good ? "bg-success/15 text-success" : "bg-destructive/15 text-destructive"
+              isUp ? "bg-success/15 text-success" : "bg-destructive/15 text-destructive"
             }`}
           >
-            {trend === "up" ? <ArrowUpRight className="h-3 w-3" /> : <ArrowDownRight className="h-3 w-3" />}
+            {isUp ? <ArrowUpRight className="h-3 w-3" /> : <ArrowDownRight className="h-3 w-3" />}
             {Math.abs(delta)}%
           </span>
         </div>
